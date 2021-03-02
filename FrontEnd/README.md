@@ -1,6 +1,9 @@
+## See the code in production
+https://master.d22h85w404g1x.amplifyapp.com/
+
 ## code layout
 
-]src/components/managed
+src/components/managed
 These components are the connectors between UI components and data services.
 
 src/components/ui
