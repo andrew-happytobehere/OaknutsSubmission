@@ -1,0 +1,23 @@
+[package]
+name = "oaknuts-solana"
+version = "0.0.1"
+description = "Swap contract for Oaknuts"
+authors = ["mchakschrak <maintainers@solana.com>"]
+repository = "https://github.com/oaknuts-solana/oaknuts-smart-contracts"
+edition = "2018"
+
+# Do not pull entrypoints for dependent programs
+# Specify them here instead to avoid collisions
+[features]
+exclude_entrypoint = []
+
+[dependencies]
+solana-program = "1.5.7"
+byteorder = "1.3"
+llvm-sys = "110.0.0"
+
+[dev-dependencies]
+byteorder = "1.3"
+
+[lib]
+crate-type = ["cdylib", "lib"]

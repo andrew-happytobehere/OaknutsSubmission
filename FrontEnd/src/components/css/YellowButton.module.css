@@ -1,0 +1,50 @@
+/* for the Main button on the sign in page */
+button.main {
+    font-size: 2.5rem;
+    background-color: #f9bc60;
+    border: none;
+    color: #001e1d;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin-top: 2%;
+}
+
+/* not used */
+button.middle {
+    font-size: 50px;
+    background-color: #f9bc60;
+    border: none;
+    color: #001e1d;
+    text-align: center;
+    display: inline-block;
+}
+
+/* for the top button in the top right of pages */
+button.top {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f9bc60;
+    border: none;
+    color: #001e1d;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5% 1%;
+    border-radius: 10px;
+    margin: 0.5%;
+}
+
+/* for the change button on the Dashboard page */
+button.change {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #f9bc60;
+    border: none;
+    color: #001e1d;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20%;
+    padding: 4% 6%;
+}

@@ -1,0 +1,219 @@
+/************************************************/
+/*** everything below this is for the deposit main page */
+/************************************************/
+.logoTileArea {
+    grid-area: logoTileArea;
+}
+
+.bottomTileArea {
+    grid-area: bottomTileArea;
+}
+
+.rightTileArea {
+    grid-area: rightTileArea;
+    display: flex;
+}
+
+.dashboardPageGridContainer {
+    display: grid;
+    grid-template-areas:
+        "logoTileArea rightTileArea rightTileArea"
+        "bottomTileArea rightTileArea rightTileArea";
+    grid-gap: 10px;
+    padding: 50px;
+}
+
+.rowContainer > div {
+    margin-top: 10px;
+}
+
+.topRightButtons {
+    text-align: right;
+    margin: 1% 2.5% 5% 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+li {
+    display: inline;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+/************************************************/
+/*** common stuff */
+/************************************************/
+/* line between your sol text and amount */
+
+h1 {
+    color: #fffffe;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 1% 0 0.4% 0;
+    text-align: left;
+}
+
+p {
+    color: #fffffe;
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fffffe;
+    left: 0px;
+}
+
+.mainTextArea {
+    grid-area: mainText;
+}
+.mainTextArea p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+
+.middleTextArea {
+    grid-area: middleText;
+}
+.middleTextArea p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.unitTextArea {
+    grid-area: unitText;
+}
+.unitTextArea p {
+    color: #fffffe;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.inputFieldArea {
+    grid-area: inputField;
+    display: flex;
+    justify-content: flex-end;
+}
+.inputFieldArea > * {
+    margin-left: 5%;
+    color: #001e1d;
+    display: inline-block;
+}
+
+.depositSingleRowComponentGridContainer {
+    grid-template-areas: "mainText middleText unitText inputField";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% 0 0 0;
+}
+
+button.firstButton {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    color: #001e1d;
+    background: #abd1c6;
+    text-align: center;
+    display: inline-block;
+    padding: 3% 6%;
+    border-radius: 10px;
+}
+
+button.secondButton {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f9bc60;
+    border: none;
+    color: #001e1d;
+    text-align: center;
+    display: inline-block;
+    padding: 3% 6%;
+    border-radius: 10px;
+}
+
+/************************************************/
+/*** everything below this is for the deposit tile */
+/************************************************/
+/* this draws the layout of the deposit tile */
+.currentBalanceTextArea {
+    grid-area: currentBalanceText;
+}
+.depositRowArea {
+    grid-area: depositRow;
+}
+
+.despositTileGridContainer {
+    display: grid;
+    grid-template-areas:
+        "currentBalanceText "
+        "depositRow";
+    grid-gap: 0px;
+    border-radius: 25px;
+    background: #004643;
+    border: 3px solid #abd1c6;
+    margin: 5% 2.5%;
+    padding: 0 2% 2% 2%;
+}
+
+/************************************************/
+/*** everything below this is for the eth address tile */
+/************************************************/
+/* this draws the layout of the eth address tile */
+.ethTileHeaderArea {
+    grid-area: ethTileHeader;
+}
+.ethRowArea {
+    grid-area: ethRow;
+}
+
+.ethTileGridContainer {
+    display: grid;
+    grid-template-areas:
+        "ethTileHeader "
+        "ethRow";
+    grid-gap: 0px;
+    border-radius: 25px;
+    background: #004643;
+    border: 3px solid #abd1c6;
+    margin: 5% 2.5%;
+    padding: 0 2% 2% 2%;
+}
+
+/************************************************/
+/*** everything below this is for the widthraw tile */
+/************************************************/
+/* this draws the layout of the widthraw tile */
+.withdrawTileHeaderArea {
+    grid-area: withdrawTileHeader;
+}
+.topWithdrawRowArea {
+    grid-area: topWithdrawRow;
+}
+
+.bottomWithdrawRowArea {
+    grid-area: bottomWithdrawRow;
+}
+
+.withdrawTileGridContainer {
+    display: grid;
+    grid-template-areas:
+        "withdrawTileHeader"
+        "topWithdrawRow"
+        "bottomWithdrawRow";
+    grid-gap: 0px;
+    border-radius: 25px;
+    background: #004643;
+    border: 3px solid #abd1c6;
+    margin: 5% 2.5%;
+    padding: 0 2% 2% 2%;
+}

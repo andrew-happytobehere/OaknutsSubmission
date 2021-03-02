@@ -1,0 +1,223 @@
+/************************************************/
+/*** The dashboard/deposit buttons in the top right */
+/************************************************/
+
+.topRightButtons {
+    text-align: right;
+    margin: 1% 2.5% 0 0;
+}
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+li {
+    display: inline;
+    padding: 5px;
+}
+
+/************************************************/
+/*** The logo tile container */
+/************************************************/
+.logoTileContainer {
+    margin: 5% 2.5% 0 2.5%;
+}
+
+.logoTileLogoAnimation {
+    width: 300px;
+}
+
+/************************************************/
+/*** The insides of the logo tile */
+/************************************************/
+/* this draws the layout of the logo tile */
+.logoArea {
+    grid-area: logoArea;
+}
+.solArea {
+    grid-area: solArea;
+}
+.nutsArea {
+    grid-area: nutsArea;
+}
+
+.logoTileGridContainer {
+    display: grid;
+    grid-template-areas:
+        "logoArea logoArea solArea solArea solArea"
+        "logoArea logoArea nutsArea nutsArea nutsArea";
+    grid-gap: 0px;
+    border-radius: 25px;
+    background: #004643;
+    border: 3px solid #abd1c6;
+    padding-bottom: 2%;
+    margin: 0 1%;
+}
+
+.logoTileLogoAnimation {
+    width: 300px;
+}
+
+/* this is the div of each grid section in the tile */
+.logoTileGridContainer > div {
+    text-align: center;
+    padding: 50px 50px 10px 0px;
+}
+
+/* the ammount */
+.logoTileGridContainer > * > p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+    text-align: center;
+}
+
+/* line between your sol text and amount */
+.line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    top: -5px;
+    left: 0px;
+}
+
+/* your sol / your nuts text */
+h1 {
+    color: #fffffe;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 1% 0 0.4% 0;
+    text-align: left;
+}
+
+/************************************************/
+/*** The UserToken/EthAddress tile container*/
+/************************************************/
+/* this draws the section (left / right tiles) */
+.leftTileArea {
+    grid-area: leftTile;
+    margin-right: 1%;
+}
+
+.rightTileArea {
+    grid-area: rightTile;
+    margin-left: 1%;
+}
+
+.userInfoContainer {
+    display: grid;
+    grid-template-areas: "leftTile rightTile";
+    grid-gap: 10px;
+    padding: 50px;
+    margin: 1%;
+}
+
+/************************************************/
+/*** The inside of the UserToken/EthAddress tile*/
+/************************************************/
+.headerArea {
+    grid-area: header;
+}
+.headerArea > h1 {
+    text-align: left;
+    margin: 0 0 1% 0;
+}
+.valueArea {
+    grid-area: value;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-top: 3%;
+}
+.valueArea p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.changeButtonArea {
+    grid-area: changeButton;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    max-height: 2rem;
+}
+
+.dashboardUserInfoComponentGridContainer {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "value value changeButton";
+    grid-gap: 0px;
+    border-radius: 25px;
+    background: #004643;
+    border: 3px solid #abd1c6;
+    text-align: center;
+    padding: 25px;
+}
+
+/************************************************/
+/*** Ledger Tile container and table*/
+/************************************************/
+.ledgerContainer {
+    padding: 2%;
+    margin: 0 3.5% 5% 3.5%;
+    border-radius: 25px;
+    background: #004643;
+    border: 3px solid #abd1c6;
+}
+
+.ledgerTable {
+    overflow-y: auto;
+    max-height: 500px;
+}
+.ledgerTable th {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fffffe;
+    text-align: left;
+}
+
+.ledgerTable tbody {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fffffe;
+}
+
+.ledgerTable tfoot {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fffffe;
+    text-align: left;
+}
+
+.ledgerTable thead th {
+    position: sticky;
+    top: -1px;
+    padding-bottom: 1%;
+}
+
+.ledgerTable tfoot tr td {
+    position: sticky;
+    bottom: 0;
+    padding-top: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #fffffe;
+    border-left: none;
+    border-right: none;
+}
+th,
+tfoot td {
+    background: #004643;
+}
