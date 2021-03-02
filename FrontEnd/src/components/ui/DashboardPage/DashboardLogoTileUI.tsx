@@ -38,7 +38,7 @@ export class DashboardLogoTileUI extends React.Component<
     updateState(state: DashboardLogoTileUIState) {
         if (this.demoCount == 0) {
             this.setState({
-                currentSol: 24.2835,
+                currentSol: 1.686,
                 currentNuts:
                     state.currentNuts +
                     Math.round(Math.random() * 100 * 1000000) / 100000,
@@ -73,11 +73,11 @@ export class DashboardLogoTileUI extends React.Component<
                     <div className={styles.line} />
                     <p>{this.state.currentSol}</p>
                 </div>
-                <div className={styles.nutsArea}>
+                {/*<div className={styles.nutsArea}>
                     <h1>Your $NUTS</h1>
                     <div className={styles.line} />
                     <p>{this.state.currentNuts}</p>
-                </div>
+                </div>*/}
             </div>
         );
     }

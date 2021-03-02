@@ -111,7 +111,7 @@ export class DashboardPageUI extends React.Component<
                 <div className={styles.userInfoContainer}>
                     <div className={styles.leftTileArea}>
                         <DashboardUserInfoComponent
-                            headerText="User Token"
+                            headerText="Solana Address"
                             value={
                                 this.props.userToken.slice(0, 8) +
                                 "..." +

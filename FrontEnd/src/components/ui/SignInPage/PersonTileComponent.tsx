@@ -12,7 +12,11 @@ export function PersonTileComponent(props: PersonTileComponentProps) {
     return (
         <div className={styles.personTileComponentContainer}>
             <div className={styles.pictureArea}>
-                <img src={props.picture} className={styles.personPicture} />
+                <img
+                    src={props.picture}
+                    style={{ width: 100 }}
+                    className={styles.personPicture}
+                />
             </div>
             <div className={styles.nameArea}>
                 <h2>{props.name}</h2>

@@ -5,6 +5,12 @@ import { PersonTileComponent } from "./PersonTileComponent";
 import styles from "../../css/SignInPage.module.css";
 import Observer from "@researchgate/react-intersection-observer";
 import { Cluster } from "@solana/web3.js";
+import andrew from "../../../team/andrew.png";
+import ben from "../../../team/ben.png";
+import cameraphobic from "../../../team/cameraphobic.jpg";
+import mrinal from "../../../team/mrinal.png";
+import n8 from "../../../team/n8.gif";
+import justin from "../../../team/tyro.png";
 
 export interface SignInPageProps {
     cluster: Cluster;
@@ -58,26 +64,26 @@ export class SignInPage extends React.Component<SignInPageProps> {
                         <h2>About Oaknuts</h2>
                         <div className={styles.line} />
                     </div>
-                    <div className={styles.aboutTitleArea}>
-                        <h3>Morbi leo risus, porta ac consectetur</h3>
-                    </div>
+                    <div className={styles.aboutTitleArea}></div>
                     <div className={styles.aboutTextArea}>
                         <p>
-                            Donec ullamcorper nulla non metus auctor fringilla.
-                            Maecenas faucibus mollis interdum. Nullam quis risus
-                            eget urna mollis ornare vel eu leo. Fusce dapibus,
-                            tellus ac cursus commodo, tortor mauris condimentum
-                            nibh, ut fermentum massa justo sit amet risus.
+                            We all know that Ethereum gas fees have reached
+                            extreme levels, recently. We check our fees.wtf page
+                            and feel pain, or even avoid the page at all costs.
                         </p>
                         <br />
                         <p>
-                            Donec id elit non mi porta gravida at eget metus.
-                            Cum sociis natoque penatibus et magnis dis
-                            parturient montes, nascetur ridiculus mus. Donec
-                            ullamcorper nulla non metus auctor fringilla. Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit.
-                            Integer posuere erat a ante venenatis dapibus
-                            posuere velit aliquet. Donec sed odio dui.
+                            But when we look at how much we've spent, do we
+                            really consider what else that money could have
+                            gone? Do we really consider that we never had to
+                            lose that money in the first place?
+                        </p>
+                        <br />
+                        <p>
+                            Oaknuts is here to show the community what your fees
+                            could do for you in a world where you don't have to
+                            give them up. Come get your SOL, and take back your
+                            soul.
                         </p>
                     </div>
                 </div>
@@ -92,34 +98,34 @@ export class SignInPage extends React.Component<SignInPageProps> {
                     </div>
                     <div className={styles.foundersPersonContainerArea}>
                         <PersonTileComponent
-                            picture={logo}
-                            name="Nate the Cake"
-                            description="Always found at parties and full of carbs. His least favorite cake is urinal"
+                            picture={n8}
+                            name="n8"
+                            description="n8 is sad that gas fees are inhibiting him from trying every single new crypto product. He also tweets SBF when he misses what it feels like to have someone read and like your tweet."
                         />
                         <PersonTileComponent
-                            picture={logo}
-                            name="Brittany not Spears"
-                            description="Britney Jean Spears (born December 2, 1981) is an American singer, songwriter, dancer, and actress."
+                            picture={cameraphobic}
+                            name="cameraphobic"
+                            description="cameraphobic is a UX designer and Fine Arts defector. She has been known to wax misty-eyed on the finer points of non-destructive editing and version control."
                         />
                         <PersonTileComponent
-                            picture={logo}
+                            picture={ben}
                             name="Ben is a hen"
                             description="Hens are omnivores. Don't smack them when you're breaking pots."
                         />
                         <PersonTileComponent
-                            picture={logo}
+                            picture={mrinal}
                             name="Mrinal"
                             description="Hi I'm Mrinal, I met Nate through work, and I've maybe known him for a few hours."
                         />
                         <PersonTileComponent
-                            picture={logo}
+                            picture={justin}
                             name="PM Justin"
                             description="Justin Pierre James Trudeau PC MP is a Canadian politician who has served as the 23rd prime minister of Canada since 2015 and has been the leader of the Liberal Party since 2013. "
                         />
                         <PersonTileComponent
-                            picture={logo}
+                            picture={andrew}
                             name="Andrew"
-                            description="hello, I feel weird."
+                            description="I'm just happy to be here"
                         />
                     </div>
                 </div>
